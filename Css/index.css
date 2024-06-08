@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: absolute;
+    color: #fff;
+    
+
+}
+img{
+    width: 263px;
+    height: 538px;
+    transition: all 1s ease-in;
+}
+.heroSection .partOne img:hover {
+    transform: scale(1.0001);
+    transition: all 1s ease-in;
+    filter: brightness(.5);
+}
+.heroSection{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0rem;
+    margin: 2rem 5rem;
+
+}
+.partOne{
+    width: auto;
+}
+ .btn span{
+    display: none;
+    position: absolute;
+    color: aqua;
+    font-size: 10px;
+    width: 0px;
+    left:80px;
+    bottom: 2rem;
+    right: 0;
+    margin: 2px;
+    padding: 3px 0px;
+    transform: translateY(10px);
+    opacity: 1;
+    transition: all  1s ease-in;
+    font-weight: 300px;
+    
+}
+.btn span i{
+    width: 0px;
+}
+.btn img{
+    display: inline;
+    width: 10px;
+    height: 5px;
+}
+
+
+.mainItem p, .mainItem-two p, .mainItem-three p, .mainItem-four p{
+    font-size: 12px;
+    font-weight: 100px;
+}
+
+ .mainItem{
+    position: absolute;
+    width: 0px;
+    left:80px;
+    bottom: 50px;
+    right: 0;
+    margin: 2px;
+    padding: 3px 0px;
+    font-size: 14px;
+    transform: translateY(10px);
+    opacity: 1;
+    transition: all  1s ease-in;
+    font-weight: 300px;
+
+}
+.two{ 
+    left:22rem;
+}
+.two span{
+    left:22rem ;
+}
+.three{
+    left:39rem;
+}
+.three span{
+    left: 39rem;
+}
+.four{
+    left:55.5rem; 
+}
+.four span{
+    left: 55.5rem;
+}
+.heroSection .partOne:hover .mainItem{
+    transform: translateY(-10px);
+    font-size: 14px;
+    opacity: 1;
+    transition: all 1s ease-in;
+
+}
+.heroSection .partOne:hover .btn span{
+    display: revert;
+    transition: all 1s ease-in;
+    z-index: 999;
+}
+
+@media only screen and (max-width: 768px) {
+    img{
+        width: 173px;
+        height: 996px;
+        transition: all 1s ease-in;
+    }
+    .two{ 
+        left:16.5rem;
+    }
+    .two span{
+        left:16.5rem ;
+    }
+    .three{
+        left:27rem;
+    }
+    .three span{
+        left: 27rem;
+    }
+    .four{
+        left:38rem; 
+    }
+    .four span{
+        left: 38rem;
+    }
+  }
+  @media only screen and (max-width: 456px) {
+    img{
+        width: 86px;
+        height: 896px;
+        transition: all 1s ease-in;
+    }
+    .two{ 
+        left:10.5rem;
+    }
+    .two span{
+        left:10.5rem ;
+    }
+    .three{
+        left:16rem;
+    }
+    .three span{
+        left: 16rem;
+    }
+    .four{
+        left:21.5rem; 
+    }
+    .four span{
+        left: 21.5rem;
+    }
+    h1{
+        font-size: 13px;
+        font-weight: 700;
+    }
+  }
